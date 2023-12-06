@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/cascadia-code");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +18,7 @@
 }
 
 body {
+  font-family: "Cascadia Code";
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +26,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.mai-photo {
+  background-image: "/Mai-Photography.png";
+}
+
+.boring {
+  background-image: url(https://images.unsplash.com/photo-1497316730643-415fac54a2af?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }

@@ -59,7 +59,9 @@ function Slider({slides}:SliderProps) {
                 ? 'opacity-[1] ease-in duration-1000'
                 : 'opacity-0'
             }
-
+            /* seta a opacidade da imagem selecionada
+            current é o contador de onde a aplicação esta no array, e index é o
+            identificador pessoal da imagem */
             
           >
               <FaArrowCircleLeft
@@ -67,7 +69,15 @@ function Slider({slides}:SliderProps) {
                 className='absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]'
                 size={50}
               />
-              
+              {index === current && (
+                <Image
+                  src={slide.image}
+                  alt='/'
+                  width='1440'
+                  height='600'
+                  objectFit='cover'
+                />
+              )}
               <FaArrowCircleRight
                 onClick={nextSlide}
                 className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]'

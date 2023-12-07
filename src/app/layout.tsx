@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <Hero heading='captur' message='I capture moments in nature and keep them alive.' />
+        <Hero heading='Captur' message='I capture moments in nature and keep them alive.' />
         {children}
       </body>
     </html>

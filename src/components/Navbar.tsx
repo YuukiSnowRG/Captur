@@ -35,6 +35,7 @@ function Navbar() {
         <h1 style={{color:`${textColor}`}} className='font-bold text-4xl'>Captur</h1>
         </Link>
         <ul style={{color:`${textColor}`}} className='hidden sm:flex'>
+          {/* quando o tamanho da tela fica acima de sm, ele muda a visualização de hidden pra flex */}
           <li className='p-4'>
             <Link href='/'>Home</Link>
           </li>
@@ -64,16 +65,16 @@ function Navbar() {
           'sm:hidden absolute top-0 bottom-0 left-[100%] right-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'}>
           {/*se a tela for acima de small vai esconder essa seção  */}
         <ul>
-          <li className='p-4 text-4xl hover:text-gray-500'>
+          <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
             <Link href='/'>Home</Link>
           </li>
-          <li className='p-4 text-4xl hover:text-gray-500'>
+          <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
             <Link href='/#gallery'>Gallery</Link>
           </li>
-          <li className='p-4 text-4xl hover:text-gray-500'>
-            <Link href='/portfolio'>Work</Link>
+          <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+            <Link href='/work'>Work</Link>
           </li>
-          <li className='p-4 text-4xl hover:text-gray-500'>
+          <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>

@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Captur App',
-  description: 'Cool Sharks and nature pictres',
+  description: 'Cool Sharks and nature pictures',
 }
 
 export default function RootLayout({

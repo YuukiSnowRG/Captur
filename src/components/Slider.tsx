@@ -75,7 +75,6 @@ function Slider({slides}:SliderProps) {
                   alt='/'
                   width='1440'
                   height='600'
-                  objectFit='cover'
                 />
               )}
               <FaArrowCircleRight

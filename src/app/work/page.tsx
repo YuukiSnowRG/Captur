@@ -1,5 +1,12 @@
 import React from 'react'
 import Portfolio from '@/components/Portfolio'
+import { Metadata } from 'next/types'
+
+export const metadata: Metadata = {
+  title: 'Captur App Portfolio',
+  description: 'Cool Sharks and nature pictres',
+}
+
 
 function work() {
   const heading = 'My work'

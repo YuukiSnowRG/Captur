@@ -4,7 +4,7 @@ import { Metadata } from 'next/types'
 
 export const metadata: Metadata = {
   title: 'Captur App Portfolio',
-  description: 'Cool Sharks and nature pictres',
+  description: 'Cool Sharks and nature pictures',
 }
 
 
